@@ -19,6 +19,7 @@ body {
 }
 
 .leftside img {
+  overflow-x: hidden;
   max-width: 500px;
   height: auto;
 }
@@ -50,4 +51,18 @@ body {
   text-align: center;
   padding: 4px;
   border-radius: 5px;
+}
+
+@media (max-width: 812px) {
+  .screen {
+    flex-direction: column;
+  }
+  .rightside {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .rightside input {
+    max-width: 350px;
+  }
 }
