@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Validador de Formúlarios</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src="images/financial_data.png" alt="">
+        </div>
+        <div class="rightside">
+            <h1>Crie uma conta</h1>
+
+            <form method="post" action="cadastro.php" class="validator">
+                <label for="">
+                    Seu nome: <br>
+                    <input type="text" name="name" data-rules="required|min=2">
+                </label>
+                <label for="">
+                    Seu e-mail: <br>
+                    <input type="email" name="email" data-rules="required">
+                </label>
+                <label for="">
+                    Seu senha: <br>
+                    <input type="password" name="senha" data-rules="required|min=4">
+                </label>
+                <label for="">
+                    <input type="submit" value="Cardastrar">
+                </label>
+            </form>
+
+            <div>Já tem uma cinta? <a href="">Faça login</a></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
