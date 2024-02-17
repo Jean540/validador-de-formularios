@@ -19,7 +19,6 @@ body {
 }
 
 .leftside img {
-  overflow-x: hidden;
   max-width: 500px;
   height: auto;
 }
@@ -57,6 +56,10 @@ body {
   .screen {
     flex-direction: column;
   }
+  .leftside img {
+    overflow-x: hidden;
+  }
+
   .rightside {
     padding: 20px;
     text-align: center;
